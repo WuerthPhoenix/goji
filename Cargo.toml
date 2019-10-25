@@ -1,7 +1,7 @@
 [package]
-name = "goji"
+name = "wp_goji_patch"
 version = "0.2.4"
-authors = ["softprops <d.tangren@gmail.com>"]
+authors = ["Francesco Cina <mr.francesco.cina@gmail.com>"]
 description = "Rust interface for Jira"
 documentation = "http://softprops.github.io/goji"
 homepage = "https://github.com/softprops/goji"
@@ -10,10 +10,6 @@ keywords = ["hyper", "jira"]
 license = "MIT"
 readme = "README.md"
 edition = "2018"
-
-[badges]
-travis-ci = { repository = "softprops/goji" }
-maintenance = { status = "actively-developed" }
 
 [dev-dependencies]
 env_logger = "0.4"
