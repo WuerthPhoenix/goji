@@ -1,5 +1,5 @@
 extern crate env_logger;
-extern crate goji;
+extern crate wp_goji_patch as goji;
 
 use goji::{Credentials, Jira};
 use std::env;

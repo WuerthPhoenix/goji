@@ -1,4 +1,4 @@
-extern crate goji;
+extern crate wp_goji_patch as goji;
 extern crate serde_json;
 
 use goji::sprints::*;
