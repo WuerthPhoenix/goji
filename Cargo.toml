@@ -1,6 +1,6 @@
 [package]
 name = "wp_goji_patch"
-version = "0.2.5"
+version = "0.2.6"
 authors = ["softprops <d.tangren@gmail.com>"]
 description = "Rust interface for Jira"
 documentation = "http://softprops.github.io/goji"
