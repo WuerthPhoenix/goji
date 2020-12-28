@@ -1,6 +1,6 @@
 [package]
 name = "wp_goji_patch"
-version = "0.2.6"
+version = "0.2.7"
 authors = ["softprops <d.tangren@gmail.com>"]
 description = "Rust interface for Jira"
 documentation = "http://softprops.github.io/goji"
@@ -19,6 +19,7 @@ maintenance = { status = "actively-developed" }
 env_logger = "0.4"
 
 [dependencies]
+chrono = { version = "0.4", features = ["serde"] }
 log = "0.4.5"
 reqwest = { version = "0.10", features = ['blocking'] }
 serde = "1.0"

@@ -23,12 +23,15 @@ mod rep;
 mod search;
 mod transitions;
 
+pub mod worklogs;
+
 pub use crate::builder::*;
 pub use crate::errors::*;
 pub use crate::issues::*;
 pub use crate::rep::*;
 pub use crate::search::Search;
 pub use crate::transitions::*;
+pub use crate::worklogs::*;
 pub mod boards;
 pub mod resolution;
 pub use crate::boards::*;
@@ -108,6 +111,11 @@ impl Jira {
     pub fn sprints(&self) -> Sprints {
         Sprints::new(self)
     }
+
+        // return boards interface
+        pub fn worklogs(&self) -> Worklogs {
+            Worklogs::new(self)
+        }
 
     fn post<D, S>(&self, api_name: &str, endpoint: &str, body: S) -> Result<D>
     where
