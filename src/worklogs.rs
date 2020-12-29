@@ -42,21 +42,21 @@ impl Worklogs {
 #[derive(Deserialize, Debug)]
 pub struct Worklog {
     #[serde(rename = "self")]
-    self_link: String,
-    author: User,
+    pub self_link: String,
+    pub author: User,
     #[serde(rename = "updateAuthor")]
-    update_author: User,
-    comment: Option<String>,
-    updated: DateTime<FixedOffset>,
-    visibility: Option<Visibility>,
-    started: DateTime<FixedOffset>,
+    pub update_author: User,
+    pub comment: Option<String>,
+    pub updated: DateTime<FixedOffset>,
+    pub visibility: Option<Visibility>,
+    pub started: DateTime<FixedOffset>,
     #[serde(rename = "timeSpent")]
-    time_spent: String,
+    pub time_spent: String,
     #[serde(rename = "timeSpentSeconds")]
-    time_spent_seconds: u64,
-    id: String,
+    pub time_spent_seconds: u64,
+    pub id: String,
     #[serde(rename = "issueId")]
-    issue_id: String,
+    pub issue_id: String,
 }
 
 #[derive(Deserialize, Debug)]
