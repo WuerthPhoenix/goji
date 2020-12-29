@@ -1,6 +1,6 @@
 use url::form_urlencoded;
 use chrono::prelude::*;
-use crate::rep::{Comment, User, Visibility};
+use crate::rep::{User, Visibility};
 
 // Ours
 use crate::{Jira, Result, SearchOptions};
